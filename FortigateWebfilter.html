@@ -6,16 +6,16 @@
 <title>Erişim Engellendi</title>
 <style>
   :root{
-    --bg:#0f172a;        /* arka plan */
-    --panel:#111827;     /* kart arka planı */
-    --text:#e5e7eb;      /* ana metin */
-    --muted:#9ca3af;     /* ikincil metin */
-    --accent:#22c55e;    /* vurgu / ikon */
-    --danger:#ef4444;    /* kırmızı */
-    --btn:#e5e7eb;       /* buton metin */
-    --btnbg:#334155;     /* buton arka plan */
-    --btnbg2:#475569;    /* ikinci buton */
-    --link:#93c5fd;      /* link rengi */
+    --bg:#0f172a;
+    --panel:#111827;
+    --text:#e5e7eb;
+    --muted:#9ca3af;
+    --accent:#22c55e;
+    --danger:#ef4444;
+    --btn:#e5e7eb;
+    --btnbg:#334155;
+    --btnbg2:#475569;
+    --link:#93c5fd;
   }
   @media (prefers-color-scheme: light){
     :root{
@@ -73,7 +73,6 @@
   <div class="card" role="alert" aria-live="assertive">
     <div class="head">
       <div class="logo" aria-hidden="true">
-        <!-- Basit inline SVG logo (renk: --accent) -->
         <svg viewBox="0 0 24 24" fill="none">
           <circle cx="12" cy="12" r="10" stroke="var(--accent)" stroke-width="2"/>
           <path d="M8 12h8M12 8v8" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
@@ -110,16 +109,13 @@
       </p>
 
       <div class="actions">
-        <!-- Geri dön: tarayıcı geçmişine -->
         <a class="btn" href="javascript:history.back()">Geri Dön</a>
 
-        <!-- İnceleme/İstisna Talebi: e-posta (adres/konu metnini kurumuna göre değiştir) -->
         <a class="btn secondary"
            href="mailto:security@firma.com?subject=Erişim%20Talebi%20-%20%%URL%%&body=Merhaba%20BT%20Ekibi,%0D%0A%0D%0A %%URL%% adresine erişim gerekiyorsa sebebini yazınız:%0D%0A- Birim:%20%0D%0A- İş%20Gereksinimi:%20%0D%0A- Süre:%20Geçici/Kalıcı%0D%0A%0D%0AKategori:%20%%CATEGORY%% %0D%0AProfil:%20%%PROFILE%% %0D%0AZaman:%20%%DATETIME%%">
            İnceleme Talep Et
         </a>
 
-        <!-- Kullanıcı rehberi veya politika PDF’iniz varsa iç link verin -->
         <a class="btn secondary" href="/it/kullanim-politikasi.html">Kullanım Politikası</a>
       </div>
 
